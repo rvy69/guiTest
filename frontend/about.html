@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Python Eel App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/css/uikit.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Page</h1>
+            <nav>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="app">
+        <button id="aboutButton" class="uk-button uk-button-primary">About Button</button>
+        <div id="aboutOutput"></div>
+    </div>
+
+    <div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="index.html">Home</a></li>
+                <li class="uk-active"><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit-icons.min.js"></script>
+    <script src="eel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
