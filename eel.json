@@ -1,0 +1,9 @@
+{
+    "mode": "chrome-app",
+    "port": 8080,
+    "web": {
+      "index": "frontend/index.html",
+      "js": "frontend/script.js",
+      "css": "frontend/styles.css"
+    }
+  }
