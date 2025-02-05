@@ -102,3 +102,15 @@ h1 {
 .offcanvas-nav:hover ~ .app-content {
     margin-left: 250px;
 }
+
+.li-item > a{
+    display: grid !important;
+    grid-auto-flow: column !important;
+    grid-template-columns: 50px auto;
+}
+  
+.li-item > a > div{
+    display: flex ;
+    align-items: center ;
+    padding-left: 5px !important;
+}
