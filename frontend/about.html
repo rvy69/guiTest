@@ -11,20 +11,16 @@
     <header>
         <div class="container">
             <h1>About Page</h1>
-            <nav>
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle></a>
-                </div>
-            </nav>
         </div>
     </header>
-    <div id="app">
+    <div id="app" class="app-content">
         <button id="aboutButton" class="uk-button uk-button-primary">About Button</button>
         <div id="aboutOutput"></div>
     </div>
 
-    <div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
-        <div class="uk-offcanvas-bar">
+    <div id="offcanvas-nav" class="offcanvas-nav">
+        <!-- <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" id="burgerMenu"></a> -->
+        <div style="padding-left: 50px;">
             <ul class="uk-nav uk-nav-default">
                 <li><a href="index.html">Home</a></li>
                 <li class="uk-active"><a href="about.html">About</a></li>
