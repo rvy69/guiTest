@@ -6,7 +6,7 @@ document.getElementById('fetchData').addEventListener('click', function() {
 
 if (document.getElementById('aboutButton')) {
     document.getElementById('aboutButton').addEventListener('click', function() {
-        eel.about_function()(function(data) {
+        eel.about_function("penis")(function(data) {
             document.getElementById('aboutOutput').innerText = data;
         });
     });
@@ -14,7 +14,7 @@ if (document.getElementById('aboutButton')) {
 
 if (document.getElementById('contactButton')) {
     document.getElementById('contactButton').addEventListener('click', function() {
-        eel.contact_function()(function(data) {
+        eel.contact_function("penis")(function(data) {
             document.getElementById('contactOutput').innerText = data;
         });
     });
