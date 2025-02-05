@@ -1,4 +1,3 @@
-/* filepath: /c:/Users/homes/Documents/guiTest/frontend/styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,11 +22,7 @@ h1 {
     overflow: hidden;
 }
 
-.uk-navbar-toggle {
-    cursor: pointer;
-}
-
-.offcanvas-nav {
+.burger-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,79 +33,31 @@ h1 {
     overflow: hidden;
 }
 
-.offcanvas-nav:hover {
+.burger-menu.open {
     width: 250px;
 }
 
-.uk-offcanvas-bar {
-    background: #35424a;
-    color: #ffffff;
-    height: 100%;
+.burger-menu .uk-nav {
     padding: 10px;
 }
 
-.uk-nav-default > li > a {
-    color: #ffffff;
+.burger-menu .uk-nav li a {
+    color: white;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
-.uk-nav-default > li.uk-active > a {
-    background: #5cb85c;
-    color: #ffffff;
-}
-
-.nav-text {
-    display: none;
-    margin-left: 10px;
-}
-
-.offcanvas-nav:hover .nav-text {
-    display: inline;
-}
-
-.button {
+.burger-menu .uk-nav li a .nav-text {
     display: inline-block;
-    font-size: 16px;
-    color: #ffffff;
-    background: #5cb85c;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
 }
 
-.button:hover {
-    background: #4cae4c;
+.burger-menu .uk-nav li a .nav-text {
+    transform: translateX(-200%);
 }
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.app-content {
-    margin-left: 50px;
-    transition: margin-left 0.3s ease;
-}
-
-.offcanvas-nav:hover ~ .app-content {
-    margin-left: 250px;
-}
-
-.li-item > a{
-    display: grid !important;
-    grid-auto-flow: column !important;
-    grid-template-columns: 50px auto;
-}
-  
-.li-item > a > div{
-    display: flex ;
-    align-items: center ;
-    padding-left: 5px !important;
+.burger-menu.open .uk-nav li a .nav-text {
+    transform: translateX(0);
 }

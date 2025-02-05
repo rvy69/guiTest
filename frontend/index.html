@@ -1,70 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Eel App</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/css/uikit.min.css" />
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>React Local</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/css/uikit.min.css" />
+  
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit-icons.min.js"></script>
+  <script src="eel.js"></script>
+
+
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Python Eel App</h1>
-        </div>
-    </header>
-    <div id="app" class="app-content">
-        <h1>Welcome to the Python Eel App</h1>
-        <button id="fetchData" class="uk-button uk-button-primary">Fetch Data from Backend</button>
-        <div id="dataDisplay"></div>
-        <!-- hier kommt neuer content-->
 
-    </div>
+    <div id="root"></div>
+    <script type="text/babel" src="script.js"></script>
 
-    <div id="offcanvas-nav" class="offcanvas-nav">
-        <ul class="uk-nav uk-nav-default">
-            <li class="uk-active li-item">
-                <a href="index.html">
-                    <img 
-                        src="imgs/dot.svg"
-                        alt="lock"
-                        height="20px"
-                        width="20px"
-                        style="width: 50px; padding: 15px"
-                    />
-                    <div>Home</div>
-                </a>
-            </li>
-            <li class="li-item">
-                <a href="about.html">
-                    <img
-                        src="imgs/dotempty.svg"
-                        alt="lock"
-                        height="20px"
-                        width="20px"
-                        style="width: 50px; padding: 15px"
-                    />
-                    <div>About</div>
-                </a>
-            </li>
-            <li class="li-item">
-                <a href="contact.html">
-                    <img
-                        src="imgs/dotempty.svg"
-                        alt="lock"
-                        height="20px"
-                        width="20px"
-                        style="width: 50px; padding: 15px"
-                    />
-                    <div>Contact</div>
-                </a>
-            </li>
-            </ul>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit-icons.min.js"></script>
-    <script src="eel.js"></script>
-    <script src="script.js"></script>
 </body>
+
 </html>
