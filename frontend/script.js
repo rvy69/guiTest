@@ -30,13 +30,23 @@ function App() {
         </button>
       </header>
 
-      <div className={`burger-menu ${menuOpen ? 'open' : ''}`}>
-        <ul className="uk-nav uk-nav-default">
+      {/* <div className={`burger-menu ${menuOpen ? 'open' : ''}`}> */}
+      <div className={`burger-menu open`}>
+        <ul className="uk-nav uk-nav-default"> {/**/}
             {sites.map((site) => {
-                return <li className={`${currentSite === site ? "uk-active" : ""}`}><a onClick={() => {
-                    setCurrentSite(site) 
-                    toggleMenu()
-                }}><span uk-icon="icon: home"></span><span className="nav-text"> {site.title}</span></a></li>
+                return <li className={`${currentSite === site ? "uk-active" : ""}`}>
+                          <a onClick={() => {
+                            setCurrentSite(site) 
+                            toggleMenu()
+                            }}>
+                            <div className="icons">
+                              <span uk-icon="icon: home"></span>
+                            </div>
+                            <div>
+                              <span className="nav-text"> {site.title}</span>
+                            </div>
+                          </a>
+                        </li>
             })}
           {/* <li className="uk-active"><a href="#"><span uk-icon="icon: home"></span><span className="nav-text"> Home</span></a></li>
           <li><a href="#"><span uk-icon="icon: info"></span><span className="nav-text"> About</span></a></li>
